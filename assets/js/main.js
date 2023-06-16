@@ -99,10 +99,11 @@
   new Swiper('.intro-carousel', {
     speed: 600,
     loop: true,
-    /* autoplay: {
+    autoplay: {
       delay: 2000,
       disableOnInteraction: false
-    }, */
+    },
+    effect: "fade",
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -111,69 +112,7 @@
     }
   });
 
-  /**
-   * Property carousel
-   */
-  new Swiper('#property-carousel', {
-    speed: 600,
-    loop: true,
-    /* autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    }, */
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.propery-carousel-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
 
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
-   * News carousel
-   */
-  new Swiper('#news-carousel', {
-    speed: 600,
-    loop: true,
-    /* autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    }, */
-      hashNavigation: {
-          watchState: true,
-      },
-    // slidesPerView: 'auto',
-    pagination: {
-      el: '.news-carousel-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-  /**
-   * floor carousel
-   */
   new Swiper('#news-carousel', {
     speed: 600,
     loop: true,
@@ -200,17 +139,20 @@
         slidesPerView: 3,
         spaceBetween: 20
       }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     }
   });
   /**
    * plan carousel
    */
-  new Swiper('#news-carousel', {
+  new Swiper('#carousel1', {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
     },
       hashNavigation: {
           watchState: true,
@@ -255,19 +197,7 @@
   /**
    * Property Single carousel
    */
-  new Swiper('#property-single-carousel', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.property-single-carousel-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+
   new Swiper('#clients-carousel', {
     speed: 600,
     loop: true,
@@ -301,3 +231,37 @@
     }
   });
 })()
+
+document.addEventListener("DOMContentLoaded", function(){
+  // make it as accordion for smaller screens
+  if (window.innerWidth < 992) {
+  
+    // close all inner dropdowns when parent is closed
+    document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+      everydropdown.addEventListener('hidden.bs.dropdown', function () {
+        // after dropdown is hidden, then find all submenus
+          this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+            // hide every submenu as well
+            everysubmenu.style.display = 'none';
+          });
+      })
+    });
+  
+    document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+      element.addEventListener('click', function (e) {
+          let nextEl = this.nextElementSibling;
+          if(nextEl && nextEl.classList.contains('submenu')) {	
+            // prevent opening link if link needs to open dropdown
+            e.preventDefault();
+            if(nextEl.style.display == 'block'){
+              nextEl.style.display = 'none';
+            } else {
+              nextEl.style.display = 'block';
+            }
+  
+          }
+      });
+    })
+  }
+  // end if innerWidth
+  }); 

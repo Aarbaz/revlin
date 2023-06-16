@@ -120,6 +120,9 @@ a:hover {
 .color-b {
   color: #d4b35f;
 }
+.color-fff {
+  color: #ffffff;
+}
 
 .color-d {
   color: #adadad;
@@ -302,6 +305,12 @@ a:hover {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 600;
+  color: #d4b35f;
+  background: #000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
 }
 
 .title-link {
@@ -485,7 +494,7 @@ a:hover {
   background: #fff;
 }
 
-#preloader:before {
+/* #preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -497,8 +506,46 @@ a:hover {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+} */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
+.fade-in {
+  transition-delay: 0.6s;
+  animation: fade-in 2s ease-in-out;
+}
+[data-animate] {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+[data-animate="bottom"] {
+  transform: translate3d(0, 15px, 0);
+}
+#preloader img {
+    height: 120px;
+    width: 120px;
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+  0% { opacity: 0.6; filter: saturate(1);  }
+  50% { opacity: 1; filter: saturate(0); }
+  100% { opacity: 0.6; filter: saturate(1);  }
+}
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -923,7 +970,7 @@ a:hover {
 }
 .intro .intro-body .price-a {
   color: #ffffff;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1.3rem;
   border: 2px solid #d4b35f;
   border-radius: 50px;
   text-transform: uppercase;
@@ -970,7 +1017,10 @@ a:hover {
 }
 @media (min-width: 992px) {
   .intro .intro-title {
-    font-size: 4rem;
+    font-size: 1.7rem;
+    background: #00000047;
+    padding: 7px;
+    width: fit-content;
   }
 }
 .intro .intro-subtitle {
@@ -999,7 +1049,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .intro .intro-subtitle.intro-price {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
 }
 
@@ -2023,4 +2073,38 @@ footer .credits {
 }
 #products .swiper-slide{
   border: 5px solid #d4b35f;
+}
+
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}
+.head-line {
+  height: 2px;
+  width: 61%;
+  margin: 0px auto;
+  background: #d4b35f;
+  margin-bottom: 20px;
+  position: relative;
+  top: -55px;
+}
+.z-99{
+  z-index: 999;
 }
