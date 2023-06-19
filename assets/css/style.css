@@ -4,6 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #555555;
+  background-color: #0c0b09;
 }
 
 h1,
@@ -21,14 +22,14 @@ a {
   transition: all 0.5s ease;
 }
 a:hover {
-  color: #d4b35f;
+  color: #d19d71;
   text-decoration: none;
 }
 .font-weight-bold{
   font-weight: bold;
 }
 .font-theme{
-  color: #d4b35f;
+  color: #d19d71;
 }
 .link-two {
   color: #000000;
@@ -40,7 +41,7 @@ a:hover {
 }
 
 .link-one {
-  color: #d4b35f  ;
+  color: #d19d71  ;
   transition: all 0.5s ease;
   font-size: 20px;
 }
@@ -118,7 +119,7 @@ a:hover {
 }
 
 .color-b {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .color-fff {
   color: #ffffff;
@@ -130,7 +131,7 @@ a:hover {
 
 .color-text-a {
   text-decoration: none;
-  color: #d4b35f;
+  color: #d19d71;
 }
 
 .no-margin {
@@ -156,7 +157,7 @@ a:hover {
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: #d4b35f;
+  background-color: #d19d71;
   z-index: 2;
 }
 
@@ -209,7 +210,7 @@ a:hover {
   color: #000000;
 }
 .pagination-a .pagination .page-link:hover, .pagination-a .pagination .page-link:active, .pagination-a .pagination .page-link:focus {
-  background-color: #d4b35f;
+  background-color: #d19d71;
 }
 .pagination-a .pagination .page-link span {
   font-size: 1.2rem;
@@ -230,12 +231,12 @@ a:hover {
   color: #555555;
 }
 .pagination-a .pagination .page-item.active .page-link {
-  background-color: #d4b35f;
+  background-color: #d19d71;
 }
 
 .a {
   text-decoration: none;
-  color: #d4b35f;
+  color: #d19d71;
   font-size: 1.3rem;
 }
 
@@ -244,13 +245,13 @@ a:hover {
   display: table-cell;
   vertical-align: top;
   font-size: 36px;
-  color: #d4b35f;
+  color: #d19d71;
   width: 50px;
   padding-top: 8px;
 }
 .icon-box .icon-box-content {
   padding-top: 18px;
-  color: #d4b35f;
+  color: #d19d71;
 }
 
 /*------/ Space Padding /------*/
@@ -303,13 +304,13 @@ a:hover {
 
 .title-a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 48px;
   font-weight: 600;
-  color: #d4b35f;
-  background: #000;
+  color: #d19d71;
+  /* background: #000; */
   padding: 5px 10px;
   border-radius: 20px;
-  width: 160px;
+  /* width: 160px; */
   text-align: center;
 }
 
@@ -342,7 +343,7 @@ a:hover {
   position: absolute;
   width: 70px;
   height: 4px;
-  background-color: #d4b35f;
+  background-color: #d19d71;
   bottom: 20px;
   left: 0;
 }
@@ -395,7 +396,7 @@ a:hover {
   transition: 0.3s;
 }
 .carousel-pagination .swiper-pagination-bullet-active {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   width: 36px;
 }
 
@@ -422,7 +423,7 @@ a:hover {
   display: inline-block;
   transition: all 0.6s ease-in-out;
   color: #ffffff;
-  background-color: #d4b35f;
+  background-color: #d19d71;
   opacity: 0.9;
 }
 .nav-arrow-b .owl-arrow .owl-nav .owl-prev.disabled,
@@ -447,10 +448,10 @@ a:hover {
 }
 .list-inline-item, .list-inline-item a{
 
-  color: #d4b35f;
+  color: #d19d71;
 }
 .bi-instagram::before, .bi-youtube::before, .bi-linkedin{
-  color: #d4b35f;
+  color: #d19d71;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -462,7 +463,7 @@ a:hover {
   right: 15px;
   bottom: 55px;
   z-index: 996;
-  background: #d4b35f;
+  background: #d19d71;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -474,7 +475,7 @@ a:hover {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #d4b35f;
+  background: #d19d71;
   color: #fff;
 }
 .back-to-top.active {
@@ -483,16 +484,6 @@ a:hover {
 }
 
 /* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
 
 /* #preloader:before {
   content: "";
@@ -500,7 +491,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #d4b35f;
+  border-top: 6px solid #d19d71;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -513,7 +504,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #000;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -538,13 +529,170 @@ a:hover {
 #preloader img {
     height: 120px;
     width: 120px;
-  animation: fade-in-out 2s ease-in-out infinite;
+    animation: fade-in-out 2s ease-in-out infinite;
+}
+.cssload-preloader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.cssload-preloader > .cssload-preloader-box {
+  position: absolute;
+  height: 29px;
+  top: 70%;
+  left: 50%;
+  margin: -15px 0 0 -146px;
+  perspective: 195px;
+  -o-perspective: 195px;
+  -ms-perspective: 195px;
+  -webkit-perspective: 195px;
+  -moz-perspective: 195px;
+}
+
+.cssload-preloader .cssload-preloader-box > div {
+  position: relative;
+  width: 29px;
+  height: 29px;
+  background: rgb(204, 204, 204);
+  float: left;
+  text-align: center;
+  line-height: 29px;
+  font-family: Verdana;
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(1) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 0ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 0ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 0ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 0ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 0ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(2) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 86.25ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 86.25ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 86.25ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 86.25ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 86.25ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(3) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 172.5ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 172.5ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 172.5ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 172.5ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 172.5ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(4) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 258.75ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 258.75ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 258.75ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 258.75ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 258.75ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(5) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 345ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 345ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 345ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 345ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 345ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(6) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 431.25ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 431.25ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 431.25ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 431.25ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 431.25ms infinite alternate;
+}
+.cssload-preloader .cssload-preloader-box > div:nth-child(7) {
+  background: #d19d71;
+  margin-right: 15px;
+  animation: cssload-movement 800ms ease 517.5ms infinite alternate;
+  -o-animation: cssload-movement 800ms ease 517.5ms infinite alternate;
+  -ms-animation: cssload-movement 800ms ease 517.5ms infinite alternate;
+  -webkit-animation: cssload-movement 800ms ease 517.5ms infinite alternate;
+  -moz-animation: cssload-movement 800ms ease 517.5ms infinite alternate;
+}
+
+@keyframes cssload-movement {
+  from {
+    transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    transform: scale(1.5) translateY(-24px) rotateX(45deg);
+    box-shadow: 0 24px 39px #d19d71;
+    background: #d19d71;
+  }
+}
+
+@-o-keyframes cssload-movement {
+  from {
+    -o-transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -o-transform: scale(1.5) translateY(-24px) rotateX(45deg);
+    box-shadow: 0 24px 39px #d19d71;
+    background: #d19d71;
+  }
+}
+
+@-ms-keyframes cssload-movement {
+  from {
+    -ms-transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -ms-transform: scale(1.5) translateY(-24px) rotateX(45deg);
+    box-shadow: 0 24px 39px #d19d71;
+    background: #d19d71;
+  }
+}
+
+@-webkit-keyframes cssload-movement {
+  from {
+    -webkit-transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-24px) rotateX(45deg);
+    box-shadow: 0 24px 39px #d19d71;
+    background: #d19d71;
+  }
+}
+
+@-moz-keyframes cssload-movement {
+  from {
+    -moz-transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -moz-transform: scale(1.5) translateY(-24px) rotateX(45deg);
+    box-shadow: 0 24px 39px #d19d71;
+    background: #d19d71;
+  }
 }
 
 @keyframes fade-in-out {
-  0% { opacity: 0.6; filter: saturate(1);  }
-  50% { opacity: 1; filter: saturate(0); }
-  100% { opacity: 0.6; filter: saturate(1);  }
+  0% { opacity: 0.6;   }
+  50% { opacity: 1;  }
+  100% { opacity: 0.6;   }
 }
 @-webkit-keyframes animate-preloader {
   0% {
@@ -580,11 +728,11 @@ a:hover {
   color: #ffffff;
 }
 .btn.btn-a:hover {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   color: #000000;
 }
 .btn.btn-b {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   color: #000000;
 }
 .btn.btn-b:hover {
@@ -592,7 +740,7 @@ a:hover {
   color: #ffffff;
 }
 .btn.btn-b-n {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   color: #ffffff;
   border-radius: 0;
 }
@@ -625,7 +773,7 @@ a:hover {
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
 }
 .navbar-default .nav-search {
-  color: #d4b35f;
+  color: #d19d71;
   font-size: 1.5rem;
 }
 .navbar-default.navbar-reduce {
@@ -648,7 +796,7 @@ a:hover {
 }
 .navbar-default.navbar-trans .nav-link, .navbar-default.navbar-reduce .nav-link {
   font-size: 1.1rem;
-  color: #d4b35f;
+  color: #d19d71;
   font-weight: 600;
   letter-spacing: 0.03em;
   transition: all 0.1s ease-in-out;
@@ -670,7 +818,7 @@ a:hover {
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s;
 }
 .navbar-default.navbar-trans .nav-link:hover, .navbar-default.navbar-reduce .nav-link:hover {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-trans .nav-link:hover:before, .navbar-default.navbar-reduce .nav-link:hover:before {
   transform: scaleX(1);
@@ -689,13 +837,13 @@ a:hover {
   background-color: #d9678d;
 }
 .navbar-default.navbar-trans .nav-link:hover {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-trans .show > .nav-link,
 .navbar-default.navbar-trans .active > .nav-link,
 .navbar-default.navbar-trans .nav-link.show,
 .navbar-default.navbar-trans .nav-link.active {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-reduce {
   transition: all 0.5s ease-in-out;
@@ -703,19 +851,19 @@ a:hover {
   padding-bottom: 19px;
 }
 .navbar-default.navbar-reduce .nav-link {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-reduce .nav-link:before {
   background-color: #d9678d;
 }
 .navbar-default.navbar-reduce .nav-link:hover {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-reduce .show > .nav-link,
 .navbar-default.navbar-reduce .active > .nav-link,
 .navbar-default.navbar-reduce .nav-link.show,
 .navbar-default.navbar-reduce .nav-link.active {
-  color: #d4b35f;
+  color: #d19d71;
 }
 .navbar-default.navbar-reduce .navbar-brand {
   color: #000000;
@@ -734,7 +882,7 @@ a:hover {
 
 .navbar-toggler span {
   display: block;
-  background-color: #d4b35f;
+  background-color: #d19d71;
   height: 3px;
   width: 25px;
   margin-top: 4px;
@@ -900,7 +1048,7 @@ a:hover {
   transition: 0.3s;
 }
 .intro .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   width: 36px;
 }
 .intro .intro-item {
@@ -928,7 +1076,7 @@ a:hover {
 .intro .intro-body .price-a {
   color: #ffffff;
   padding: 0.7rem 1.3rem;
-  border: 2px solid #d4b35f;
+  border: 2px solid #d19d71;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -1011,9 +1159,9 @@ a:hover {
 }
 
 /*------/ Intro Single /------*/
-.intro-single {
+/* .intro-single {
   padding: 12rem 0 3rem;
-}
+} */
 @media (max-width: 767px) {
   .intro-single {
     padding-top: 9rem;
@@ -1023,15 +1171,15 @@ a:hover {
   padding: 1rem 0 1rem 2rem;
 }
 .title-single-box {
-  border-left: 3px solid #d4b35f;
+  border-left: 3px solid #d19d71;
 }
 .title-single-box .title-single {
   font-weight: 600;
   font-size: 2.2rem;
-  color: #d4b35f;
+  color: #d19d71;
 }
 .icon-title{
-  color: #d4b35f;
+  color: #d19d71;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -1123,7 +1271,24 @@ a:hover {
   top: 0;
   left: 0;
 }
-
+.img-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 34, 56, 0.5);
+  position: absolute;
+  top: 0;
+  transform: translate(-100%, 0);
+  transition: all 1s;
+}
+.news-box:hover .img-overlay {
+  transform: translate(0%, 0);
+  transition: all 0.5s;
+  cursor: url(../images/hovericon.png), auto !important;
+}
+.news-box:hover img{
+  transform: scale(1.19);
+  transition: all 0.5s;
+ }
 .card-shadow {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1224,7 +1389,7 @@ a:hover {
 .price-a {
   color: #ffffff;
   padding: 0.6rem 0.8rem;
-  border: 2px solid #d4b35f;
+  border: 2px solid #d19d71;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -1234,7 +1399,7 @@ a:hover {
   width: 100%;
   position: absolute;
   z-index: 2;
-  background-color: #d4b35f;
+  background-color: #d19d71;
 }
 
 .card-info {
@@ -1356,9 +1521,9 @@ a:hover {
 }
 .card-header-b .category-b {
   font-size: 0.9rem;
-  background-color: #d4b35f;
+  background-color: #000000;
   padding: 0.3rem 0.7rem;
-  color: #000;
+  color: #d19d71;
   letter-spacing: 0.03em;
   border-radius: 50px;
   text-decoration: none;
@@ -1396,7 +1561,9 @@ a:hover {
     font-size: 1rem;
   }
 }
-
+#carousel1 .img-box-b img{
+  height: 340px;
+}
 /*------/ News Single /------*/
 .post-information {
   padding: 3rem 0;
@@ -1420,7 +1587,7 @@ a:hover {
 }
 .post-content .blockquote {
   padding: 1rem 3rem 1.7rem 3rem;
-  border-left: 3px solid #d4b35f;
+  border-left: 3px solid #d19d71;
   color: #000000;
 }
 .post-content .blockquote footer {
@@ -1510,7 +1677,7 @@ a:hover {
 
 .card-box-ico {
   padding: 1rem 3rem 1rem 2.5rem;
-  border: 5px solid #d4b35f;
+  border: 5px solid #d19d71;
 }
 .card-box-ico span {
   font-size: 4rem;
@@ -1628,7 +1795,7 @@ a:hover {
 .card-box-d:hover .content-d,
 .card-box-d:hover .info-agents,
 .card-box-d:hover .card-footer-d {
-  color: #d4b35f;
+  color: #d19d71;
   opacity: 1;
   transform: translateY(0);
 }
@@ -1711,7 +1878,7 @@ a:hover {
   display: flex !important;
 }
 .sinse-box {
-  background-color: #d4b35f;
+  background-color: #d19d71;
   padding: 1rem 2rem;
   position: absolute;
   left: 15px;
@@ -1796,7 +1963,7 @@ a:hover {
 }
 .testimonial-ico i {
   font-size: 48px;
-  color: #d4b35f;
+  color: #d19d71;
 }
 
 .testimonial-text {
@@ -1833,7 +2000,7 @@ a:hover {
 # Contact Section
 --------------------------------------------------------------*/
 .form-as #sendmessage {
-  color: #d4b35f;
+  color: #d19d71;
   border: 1px solid #26a356;
   display: none;
   text-align: center;
@@ -1877,7 +2044,7 @@ a:hover {
 }
 .form-as .form-control:focus {
   box-shadow: none;
-  border-color: #d4b35f;
+  border-color: #d19d71;
 }
 
 .php-email-form .error-message {
@@ -1931,7 +2098,7 @@ a:hover {
 }
 .php-email-form .form-control:focus {
   box-shadow: none;
-  border-color: #d4b35f;
+  border-color: #d19d71;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1966,7 +2133,7 @@ a:hover {
 .section-footer .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
-  color: #d4b35f;
+  color: #d19d71;
 }
 .section-footer .widget-a .w-title-a {
   margin-bottom: 1rem;
@@ -2023,15 +2190,44 @@ footer .credits {
   opacity: 1
 }
 .swiper-button-next, .swiper-button-prev{
-  color: #d4b35f;
+  color: #d19d71;
+  background: #000;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
-  font-size: 30px;
+  font-size: 22px;
 }
 #products .swiper-slide{
-  border: 5px solid #d4b35f;
+  border: 5px solid #d19d71;
 }
-
+#products{
+  background-image: url('../../assets/img/slider/bg.jpg');
+  background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+#products::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.dropdown-menu{
+  background-color: #070e13;
+  color: #fff;
+}
+.dropdown-item{
+  color: #e3b68f;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  color: #fff;
+  background-color: #d9678d;
+}
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
 	.nav-item .submenu{ 
@@ -2053,15 +2249,25 @@ footer .credits {
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
 }
-.head-line {
+/* .head-line {
   height: 2px;
   width: 61%;
   margin: 0px auto;
-  background: #d4b35f;
+  background: #d19d71;
   margin-bottom: 20px;
   position: relative;
   top: -55px;
+} */
+.head-line {
+  width: 100%;
+  height: 25px;
+  background: url(../img/icon.png) no-repeat center center;
+  margin-bottom: 10px;
 }
 .z-99{
   z-index: 999;
+}
+
+#clients-carousel .img-box-b img{
+  height: 150px;
 }
