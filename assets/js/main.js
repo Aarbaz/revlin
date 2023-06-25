@@ -73,7 +73,9 @@
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove()
+      setTimeout(() => {
+        preloader.remove();
+      }, 3000);
     });
   }
 
@@ -99,9 +101,8 @@
   new Swiper('.intro-carousel', {
     speed: 600,
     loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
+    hashNavigation: {
+      watchState: true,
     },
     effect: "fade",
     slidesPerView: 'auto',
@@ -109,7 +110,8 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    }
+    },
+    
   });
 
 
@@ -169,6 +171,10 @@
         spaceBetween: 20
       },
 
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
       1200: {
         slidesPerView: 4,
         spaceBetween: 20
@@ -208,7 +214,7 @@
       hashNavigation: {
           watchState: true,
       },
-    // slidesPerView: 'auto',
+    slidesPerView: 'auto',
     pagination: {
       el: '.clients-carousel-pagination',
       type: 'bullets',
@@ -216,7 +222,7 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 20
       },
 
