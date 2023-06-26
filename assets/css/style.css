@@ -1091,7 +1091,7 @@ a:hover {
 .intro .intro-title {
   color: #ffffff;
   font-weight: 700;
-  font-size: 2.8rem;
+  /* font-size: 2.8rem; */
   background: #00000047;
   text-transform: uppercase;
   transition-delay: 0.6s;
@@ -1168,7 +1168,10 @@ a:hover {
 } */
 @media (max-width: 767px) {
   .intro-single {
-    padding-top: 9rem;
+    padding-top: 1.5rem;
+  }
+  .intro .intro-item{
+    padding-top: 6rem;
   }
 }
 .title-single-box {
@@ -2204,14 +2207,15 @@ footer .credits {
   border: 5px solid #d19d71;
 }
 #products{
-  background-image: url('../../assets/img/slider/bg.jpg');
+  background-image: url('../../assets/img/abt-bg.jpg');
   background-size: cover;
     position: relative;
     background-attachment: fixed;
 }
 #products::before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: #1E1E1E;
+  opacity: 0.5;
   position: absolute;
   bottom: 0;
   top: 0;
